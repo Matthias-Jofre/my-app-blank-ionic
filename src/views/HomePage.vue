@@ -1,29 +1,31 @@
 <template>
   <ion-page>
-    <ion-header :translucent="true">
+
+    <!-- <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Blank</ion-title>
       </ion-toolbar>
-    </ion-header>
+    </ion-header> -->
     
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
+    <ion-content :fullscreen="false">
+      <!-- <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Blank</ion-title>
         </ion-toolbar>
-      </ion-header>
+      </ion-header> -->
     
       <div id="container">
-        <strong>Ready to create an app?</strong>
-        <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        <ion-button>Go next Page</ion-button>
       </div>
+
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton } from '@ionic/vue';
 import { defineComponent } from 'vue';
+import Example from '../components/Example.vue';
 
 export default defineComponent({
   name: 'HomePage',
@@ -32,8 +34,14 @@ export default defineComponent({
     IonHeader,
     IonPage,
     IonTitle,
-    IonToolbar
-  }
+    IonToolbar,
+    IonButton,
+    Example
+},
+mounted() {
+    console.log();
+    
+},
 });
 </script>
 
@@ -48,7 +56,7 @@ export default defineComponent({
   transform: translateY(-50%);
 }
 
-#container strong {
+/* #container strong {
   font-size: 20px;
   line-height: 26px;
 }
@@ -64,5 +72,5 @@ export default defineComponent({
 
 #container a {
   text-decoration: none;
-}
+} */
 </style>
