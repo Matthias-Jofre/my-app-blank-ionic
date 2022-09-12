@@ -1,34 +1,39 @@
 <template>
   <ion-page>
-
     <!-- <ion-header :translucent="true">
       <ion-toolbar>
         <ion-title>Blank</ion-title>
       </ion-toolbar>
     </ion-header> -->
-    
+
     <ion-content :fullscreen="false">
       <!-- <ion-header collapse="condense">
         <ion-toolbar>
           <ion-title size="large">Blank</ion-title>
         </ion-toolbar>
       </ion-header> -->
-    
-      <div id="container">
+      <h1>Segundo cambio</h1>
+      <!-- <div id="container">
         <ion-button>Go next Page</ion-button>
-      </div>
-
+      </div> -->
     </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton } from '@ionic/vue';
-import { defineComponent } from 'vue';
-import Example from '../components/Example.vue';
+import {
+  IonContent,
+  IonHeader,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonButton,
+} from "@ionic/vue";
+import { defineComponent } from "vue";
+import Example from "../components/Example.vue";
 
 export default defineComponent({
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     IonContent,
     IonHeader,
@@ -36,19 +41,18 @@ export default defineComponent({
     IonTitle,
     IonToolbar,
     IonButton,
-    Example
-},
-mounted() {
+    Example,
+  },
+  mounted() {
     console.log();
-    
-},
+  },
 });
 </script>
 
 <style scoped>
 #container {
   text-align: center;
-  
+
   position: absolute;
   left: 0;
   right: 0;
